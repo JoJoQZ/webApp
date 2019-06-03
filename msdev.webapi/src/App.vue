@@ -1,3 +1,4 @@
+<!--
 <template>
   <div id="app">
     <img src="./assets/logo.png">
@@ -21,3 +22,15 @@ export default {
   margin-top: 60px;
 }
 </style>
+-->
+
+<script>
+import prompt from '@/services/prompt'
+export default {
+  name: 'app',
+  mounted() {
+    // 全局错误初始化
+    prompt.init.call(this)
+  }
+}
+</script>
