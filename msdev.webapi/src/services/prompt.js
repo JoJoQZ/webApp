@@ -10,7 +10,7 @@ const init = function () {
             customClass: 'el-error-msg',
             duration
         });
-    }
+    };
     // 成功提示
     window.Tips = function (msg, duration = 3000) {
         _this.$notify({
@@ -19,7 +19,7 @@ const init = function () {
             type: 'success',
             duration
         });
-    }
+    };
     // 警告提示
     window.Warning = function (msg, duration = 3000) {
         _this.$notify({
@@ -28,8 +28,7 @@ const init = function () {
             type: 'warning',
             duration
         });
-    }
-
+    };
     // 全局延时器
     window.SetTimeout = function (path, queryObject) {
         setTimeout(_ => {
@@ -38,9 +37,9 @@ const init = function () {
                 query: queryObject
             });
         }, 500)
-    }
+    };
 };
 
 export default {
     init
-}
+};
